@@ -1,0 +1,16 @@
+{
+  "name": "particle-force-field",
+  "version": "1.0.0",
+  "description": "GPU Particle Force Field demo (static site)",
+  "scripts": {
+    "start": "npx serve -s . -l 3000",
+    "lint": "eslint . --ext .js",
+    "sast": "npm run lint || true",
+    "ci-sast": "npm run lint && npm audit --audit-level=high || true"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-plugin-security": "^1.4.0",
+    "serve": "^14.0.1"
+  }
+}
